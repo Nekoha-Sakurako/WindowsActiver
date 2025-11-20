@@ -24,12 +24,12 @@ Partial Class WinActFormMain
     Private Sub InitializeComponent()
         WinActLabel = New Label()
         WinActExec = New Button()
-        WinActUtils = New Button()
         WinActKeyList = New ComboBox()
         WinActServerList = New ComboBox()
         WinActKeyTips = New Label()
         WinActServerTips = New Label()
         WinActBar = New ProgressBar()
+        WinActUtilities = New ComboBox()
         SuspendLayout()
         ' 
         ' WinActLabel
@@ -50,15 +50,6 @@ Partial Class WinActFormMain
         WinActExec.TabIndex = 1
         WinActExec.Text = "激活"
         WinActExec.UseVisualStyleBackColor = True
-        ' 
-        ' WinActUtils
-        ' 
-        WinActUtils.Location = New Point(253, 391)
-        WinActUtils.Name = "WinActUtils"
-        WinActUtils.Size = New Size(75, 23)
-        WinActUtils.TabIndex = 2
-        WinActUtils.Text = "其他功能"
-        WinActUtils.UseVisualStyleBackColor = True
         ' 
         ' WinActKeyList
         ' 
@@ -103,17 +94,27 @@ Partial Class WinActFormMain
         WinActBar.Size = New Size(288, 23)
         WinActBar.TabIndex = 7
         ' 
+        ' WinActUtilities
+        ' 
+        WinActUtilities.FormattingEnabled = True
+        WinActUtilities.Items.AddRange(New Object() {"备用激活方案…", "卸载产品密钥…", "调试功能…"})
+        WinActUtilities.Location = New Point(206, 389)
+        WinActUtilities.Name = "WinActUtilities"
+        WinActUtilities.Size = New Size(122, 25)
+        WinActUtilities.TabIndex = 8
+        WinActUtilities.Text = "其他功能"
+        ' 
         ' WinActFormMain
         ' 
         AutoScaleDimensions = New SizeF(7F, 17F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(383, 498)
+        Controls.Add(WinActUtilities)
         Controls.Add(WinActBar)
         Controls.Add(WinActServerTips)
         Controls.Add(WinActKeyTips)
         Controls.Add(WinActServerList)
         Controls.Add(WinActKeyList)
-        Controls.Add(WinActUtils)
         Controls.Add(WinActExec)
         Controls.Add(WinActLabel)
         Name = "WinActFormMain"
@@ -124,11 +125,11 @@ Partial Class WinActFormMain
 
     Friend WithEvents WinActLabel As Label
     Friend WithEvents WinActExec As Button
-    Friend WithEvents WinActUtils As Button
     Friend WithEvents WinActKeyList As ComboBox
     Friend WithEvents WinActServerList As ComboBox
     Friend WithEvents WinActKeyTips As Label
     Friend WithEvents WinActServerTips As Label
     Friend WithEvents WinActBar As ProgressBar
+    Protected WithEvents WinActUtilities As ComboBox
 
 End Class
