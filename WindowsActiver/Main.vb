@@ -2,6 +2,8 @@
     Dim KeyValue As String
     Dim ServerValue As String
     Dim KeyUninst
+    Dim ServerUninst
+    Dim Uninst
     Dim objShell
     Dim FailMsg
     Dim ExecMsg
@@ -55,6 +57,7 @@
             WinActExec.Text = "正在激活"
             Activator()
         End If
+        'if the activator does not execute the reset operate then do following commands
         WinActExec.Enabled = True
         WinActKeyList.Enabled = True
         WinActKeyTips.Text = WinActKeyTips.Text.Substring(WinActKeyTips.Text.Length - 11)
@@ -64,6 +67,7 @@
     End Sub
 
     Private Sub WinActUtilities_SelectedIndexChanged(sender As Object, e As EventArgs) Handles WinActUtilities.SelectedIndexChanged
+        objShell = CreateObject("WScript.Shell")
         If WinActUtilities.SelectedItem = "备用激活方案…" Then
             KeyValue = ""
             ServerValue = ""
@@ -74,21 +78,48 @@
             ElseIf ServerValue = "" Then
                 MsgBox("你尚未设置KMS服务器，无法激活。", 48, "激活失败")
             Else
-                Activator()
+                ExecMsg = MsgBox("确认要激活Windows副本吗？" & vbCrLf & "你选择的产品密钥是：" + KeyValue & vbCrLf & "你选择的KMS服务器是：" + ServerValue, vbQuestion + vbYesNo, "二次确认")
+                If ExecMsg = vbYes Then
+                    Activator()
+                End If
             End If
         ElseIf WinActUtilities.SelectedItem = "卸载产品密钥…" Then
             KeyUninst = MsgBox("确认要卸载已安装的产品密钥吗？", vbQuestion + vbYesNo, "二次确认")
             If KeyUninst = vbYes Then
                 Me.UseWaitCursor = True
-                Me.Text = （"(正在卸载产品密钥……)" & Me.Text）
-                Dim objShell
-                objShell = CreateObject("WScript.Shell")
+                Me.Text = "(正在卸载产品密钥……)" & Me.Text
                 objShell.Run("slmgr.vbs /upk", 0, True)
                 Me.UseWaitCursor = False
                 Me.Text = Me.Text.Substring(Me.Text.Length - 14)
             End If
+        ElseIf WinActUtilities.SelectedItem = "取消已设置的KMS服务器…" Then
+            ServerUninst = MsgBox("确认要取消已设置的KMS服务器吗？", vbQuestion + vbYesNo, "二次确认")
+            If ServerUninst = vbYes Then
+                Me.UseWaitCursor = True
+                Me.Text = "(正在取消设置KMS服务器……)" & Me.Text
+                objShell.Run("slmgr.vbs /ckms", 0, True)
+                Me.UseWaitCursor = False
+                Me.Text = Me.Text.Substring(Me.Text.Length - 14)
+            End If
+        ElseIf WinActUtilities.SelectedItem = "显示激活状态…" Then
+            objShell.Run("slmgr.vbs /dlv", 0, True)
+        ElseIf WinActUtilities.SelectedItem = "查询到期时间…" Then
+            objShell.Run("slmgr.vbs /xpr", 0, True)
+        ElseIf WinActUtilities.SelectedItem = "取消激活（危险功能！！！）…" Then
+            Uninst = MsgBox("确认要取消激活吗？" & vbCrLf & "请三思后再进行选择！", vbQuestion + vbYesNo, "二次确认")
+            If Uninst = vbYes Then
+                Uninst = MsgBox("你真的确认要取消激活吗？" & vbCrLf & "这是最后一次警告！该操作不可逆！", vbExclamation + vbYesNo, "三次确认")
+                If Uninst = vbYes Then
+                    Me.UseWaitCursor = True
+                    Me.Text = "(正在取消激活……)" & Me.Text
+                    objShell.Run("slmgr.vbs /rearm", 0, True)
+                    Me.UseWaitCursor = False
+                    Me.Text = Me.Text.Substring(Me.Text.Length - 14)
+                End If
+            End If
         ElseIf WinActUtilities.SelectedItem = "调试功能…" Then
-            MsgBox("目前还没有")
+                MsgBox("目前还没有")
+            MsgBox("恭喜，已成功激活该Windows副本。", 64, "激活完毕")
         End If
     End Sub
 End Class

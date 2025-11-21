@@ -96,11 +96,11 @@ Partial Class WinActFormMain
         ' 
         ' WinActUtilities
         ' 
-        WinActUtilities.FormattingEnabled = True
-        WinActUtilities.Items.AddRange(New Object() {"备用激活方案…", "卸载产品密钥…", "调试功能…"})
-        WinActUtilities.Location = New Point(206, 389)
+        WinActUtilities.FlatStyle = FlatStyle.System
+        WinActUtilities.Items.AddRange(New Object() {"备用激活方案…", "卸载产品密钥…", "取消已设置的KMS服务器…", "显示激活状态…", "查询到期时间…", "取消激活（危险功能！！！）…", "调试功能…"})
+        WinActUtilities.Location = New Point(160, 389)
         WinActUtilities.Name = "WinActUtilities"
-        WinActUtilities.Size = New Size(122, 25)
+        WinActUtilities.Size = New Size(168, 25)
         WinActUtilities.TabIndex = 8
         WinActUtilities.Text = "其他功能"
         ' 

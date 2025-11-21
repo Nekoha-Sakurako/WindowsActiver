@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|c:\\users\\hitevision\\source\\repos\\nekoha-sakurako\\windowsactiver\\windowsactiver\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|solutionrelative:windowsactiver\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|c:\\users\\hitevision\\source\\repos\\nekoha-sakurako\\windowsactiver\\windowsactiver\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|solutionrelative:windowsactiver\\main.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|c:\\users\\hitevision\\source\\repos\\nekoha-sakurako\\windowsactiver\\windowsactiver\\applicationevents.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|solutionrelative:windowsactiver\\applicationevents.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|c:\\users\\hitevision\\source\\repos\\nekoha-sakurako\\windowsactiver\\windowsactiver\\windowsactiver.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D64B8D8E-5BAA-4FE3-F714-D1BA657B89FD}|WindowsActiver\\WindowsActiver.vbproj|solutionrelative:windowsactiver\\windowsactiver.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.vb",
+              "DocumentMoniker": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\Main.vb",
+              "RelativeDocumentMoniker": "WindowsActiver\\Main.vb",
+              "ToolTip": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\Main.vb",
+              "RelativeToolTip": "WindowsActiver\\Main.vb",
+              "ViewState": "AgIAAFwAAACASZI3gJwhwG4AAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T09:06:06.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationEvents.vb",
+              "DocumentMoniker": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\ApplicationEvents.vb",
+              "RelativeDocumentMoniker": "WindowsActiver\\ApplicationEvents.vb",
+              "ToolTip": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\ApplicationEvents.vb",
+              "RelativeToolTip": "WindowsActiver\\ApplicationEvents.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T22:59:17.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WindowsActiver",
+              "DocumentMoniker": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\WindowsActiver.vbproj",
+              "RelativeDocumentMoniker": "WindowsActiver\\WindowsActiver.vbproj",
+              "ToolTip": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\WindowsActiver.vbproj",
+              "RelativeToolTip": "WindowsActiver\\WindowsActiver.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
+              "WhenOpened": "2025-11-20T09:09:03.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Main.vb [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\Main.vb",
+              "RelativeDocumentMoniker": "WindowsActiver\\Main.vb",
+              "ToolTip": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\Main.vb [\u8BBE\u8BA1]",
+              "RelativeToolTip": "WindowsActiver\\Main.vb [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-20T06:55:16.767Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
