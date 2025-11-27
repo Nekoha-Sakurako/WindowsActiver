@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\WindowsActiver.vbproj",
+      "projectUniqueName": "C:\\Users\\HiteVision\\OneDrive\\WindowsActiver\\WindowsActiver\\WindowsActiver.vbproj",
       "projectName": "WindowsActiver",
-      "projectPath": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\WindowsActiver.vbproj",
+      "projectPath": "C:\\Users\\HiteVision\\OneDrive\\WindowsActiver\\WindowsActiver\\WindowsActiver.vbproj",
       "packagesPath": "C:\\Users\\HiteVision\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HiteVision\\source\\repos\\Nekoha-Sakurako\\WindowsActiver\\WindowsActiver\\obj\\",
+      "outputPath": "C:\\Users\\HiteVision\\OneDrive\\WindowsActiver\\WindowsActiver\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
