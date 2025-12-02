@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("WindowsActiver"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+066f57f9387e017b8db61fc6e02844b77d5aedff"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9884996fc4b3f078f73379267823ec1c228f9a42"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("WindowsActiver"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("WindowsActiver"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
